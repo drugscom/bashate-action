@@ -1,0 +1,5 @@
+name: 'Bashate linter'
+description: 'Run bashate linter'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
