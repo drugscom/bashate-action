@@ -5,6 +5,7 @@ name: Build image
   push:
     branches:
       - master
+    tags:
   workflow_dispatch:
 
 permissions:
