@@ -3,9 +3,8 @@ name: Build image
 
 'on':
   push:
-    branches:
-      - master
-    tags:
+    branches: [master]
+    tags: ['*']
   workflow_dispatch:
 
 permissions:
