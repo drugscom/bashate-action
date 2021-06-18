@@ -1,5 +1,15 @@
 name: 'Bashate linter'
 description: 'Run bashate linter'
+inputs:
+  ignore:
+    description: 'Rules to ignore'
+    required: false
+  error:
+    description: 'Rules to always error (rather than warn)'
+    required: false
+  warn:
+    description: 'Rules to always warn (rather than error)'
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
