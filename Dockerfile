@@ -1,4 +1,4 @@
-FROM python:3.10.2-alpine3.15 as build
+FROM python:3.11.0a6-alpine3.15 as build
 
 RUN python3 -m venv /entrypoint
 
@@ -6,7 +6,7 @@ COPY entrypoint /src
 RUN /entrypoint/bin/pip install /src
 
 
-FROM python:3.10.2-alpine3.15
+FROM python:3.11.0a6-alpine3.15
 
 LABEL 'com.github.actions.name'='Bashate linter'
 LABEL 'com.github.actions.description'='Run bashate linter'
